@@ -1,5 +1,9 @@
 FROM selenium/standalone-chrome:latest
 ENV WIREMOCK_VERSION 2.26.3
+ENV TZ Europe/Amsterdam
+
+USER root
+RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
 
 USER seluser
 
