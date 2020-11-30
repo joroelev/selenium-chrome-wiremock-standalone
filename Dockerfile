@@ -1,4 +1,4 @@
-FROM selenium/standalone-chrome:latest
+FROM selenium/standalone-chrome:3.141.59-20201119
 ENV WIREMOCK_VERSION 2.26.3
 
 USER root
